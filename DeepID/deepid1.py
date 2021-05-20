@@ -167,7 +167,7 @@ if __name__ == '__main__':
     with open(cpktLogFileName, 'r') as f:
 
         cpktFileName = f.readline().split('"')[1]
-        h5FileName = r'./model/weight.h5'
+        h5FileName = r'model\weight.h5'
     reader = tf.train.NewCheckpointReader(cpktFileName)
     f = h5py.File(h5FileName, 'w')
 
